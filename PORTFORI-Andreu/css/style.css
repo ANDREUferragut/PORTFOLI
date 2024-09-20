@@ -1,8 +1,64 @@
-body{
-    background-color: rgb(235, 207, 172);
-    color: rgb(255, 253, 253);
+*,
+*::before
+*::after {
+    box-sizing: border-box;
 }
-header{
-    background-color: rgb(199, 180, 158);
-    color: rgb(240, 242, 243);
+
+:root {
+    --font-1: "Oswald", sans-serif;
+    --font-2: "Gowun Batang", serif;
+
+    --pes-font: 300;
+    --pes-negreta:900;
+
+    --colorClar: #E2BE68;
+    --colorFosc: #65491A;
+    --colorResaltar: #EEE84D;
+
+    --tamany-h1: 3rem;
+    --tamany-h2: 2.25rem;
+    --tamany-h3: 1.25rem;
+    --tamany-body: 1rem;
+}
+
+@media (min-width: 800px) {
+    :root {
+        --tamny-h1: 4.5rem;
+        --tamny-h1: 3.75rem;
+        --tamny-h1: 1.5rem;
+        --tamny-body: 1.125rem;
+    }
+}
+
+body {
+    background: var(--colorClar);
+    color: var(colorFosc);
+    margin: 0;
+    font-family: var(--font-1);
+    font-size: var(--tamany-body);
+    line-height: 1.6;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1{
+    font-size: var(--tamany-h1);
+}
+
+h2 {
+    font-size: var(--tamany-h2);
+}
+
+h3 {
+    font-size: var(--tamany-h3);
 }
