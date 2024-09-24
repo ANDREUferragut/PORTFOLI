@@ -30,6 +30,10 @@
     }
 }
 
+strong{
+    font-weight: var(--pes-negreta);
+}
+
 body {
     background: var(--colorClar);
     color: var(colorFosc);
@@ -61,4 +65,27 @@ h2 {
 
 h3 {
     font-size: var(--tamany-h3);
+}
+
+.titol {
+    margin-bottom: 0.25em;
+}
+
+.titol-intro {
+font-weight: var(--pes-font);
+}
+
+.subtitol {
+    margin: 0;
+    font-size: var(--tamany-h3);
+}
+
+.subtitol-intro,
+.subtitol-about {
+    background: var(--colorResaltar);
+    font-family: var(--font-2);
+}
+
+.titol-intro strong {
+    display: block;
 }
