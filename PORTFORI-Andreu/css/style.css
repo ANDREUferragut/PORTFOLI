@@ -227,3 +227,81 @@ position: relative;
     background-color: var(--colorFosc);
 }
 
+.portfoli{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.portfoli-obj{
+    background: var(--colorResaltar);
+    overflow: hidden;
+}
+
+.portfoli-img{
+    transition: 
+    transform 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
+
+    width: 100%;
+}
+
+.portfoli-img:hover{
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+.btn{
+    display: inline-block;
+    background-color: var(--colorResaltar);
+    padding: 1em;
+    text-decoration: none;
+    font-family: var(--font-2);
+    cursor: pointer;
+    font-size: 0,8rem;
+    font-weight: var(--pes-negreta);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    text-align: center;
+    background-color: var(--colorFosc);
+    color: var(--colorResaltar);
+    font-size: var(--tamany-h3);
+}
+
+.link{
+    color: inherit;
+    text-decoration: none;
+    font-size: var(--tamany-h1);
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.link-list{
+    padding: 0,5em;
+}
+
+.link-list:hover
+.link:hover{
+    opacity: 0,7;
+}
+
+.item-list{
+    margin: 0, 0.5;
+}
+
+.lista{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
