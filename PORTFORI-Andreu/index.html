@@ -9,26 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/f9c0b16875.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
     <title>Andreu Ferragut</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <img src="./img/logo andreu bo.png" width="20%">
+        <div class="logo">
+            <img src="./img/logo andreu bo.png">
         </div>
-        <button>
-            <span><img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/1f37a.png" alt="" width="40px"></span>
+        <button id="hola" class=" desplegable">
+            <span class="beer"></span>
         </button>
-        <nav>
-            <ul>
-                <li><a href="#Intro" target="_blank">Andreu Ferragut</a> 
+        <nav id="m" class="menu andreu">
+            <ul class="menu-lista">
+                <li class="menu-item">
+                    <a href="#Intro" class="menu-link" id="b1">Andreu Ferragut</a> 
                 </li>
-                <li><a href="#Serveis" target="_blank">Serveis</a> 
+                <li class="menu-item">
+                    <a href="#Serveis" class="menu-link" id="b2">Serveis</a> 
                 </li>
-                <li><a href="#Sobre Mi" target="_blank">Sobre Mi</a>
+                <li class="menu-item">
+                    <a href="#Sobre Mi" class="menu-link" id="b3">Sobre Mi</a>
                  </li>
-                <li><a href="#Treballs" target="_blank">Els Meus Tresballs</a> 
+                <li class="menu-item">
+                    <a href="#Treballs" class="menu-link" id="b4">Els Meus Tresballs</a> 
                 </li>
             </ul>
         </nav>
@@ -106,16 +111,36 @@
 <footer class="footer">
     <a href="mailto:aferragut19499@iesjoanramis.org" class="link">aferragut19499@iesjoanramis.org</a>
     <ul class="lista">
-        <li class="titem-list">
+        <li class="item-list">
             <a href="https://www.instagram.com/anndreuuu_/?next=%2F" class="link-list"><i class="fa-brands fa-instagram"></i></a>
         </li>
-        <li class="titem-list">
+        <li class="item-list">
             <a href="https://github.com/ANDREUferragut" class="link-list"><i class="fa-brands fa-github"></i></a>
         </li>
-        <li class="titem-list">
-            <a href="" class="link-list"><i class="link-list"></i></a>
+        <li class="item-list">
+            <a href="https://web.whatsapp.com/" class="link-list"><i class="fa-solid fa-phone"></i></a>
+        </li>
+        <li class="item-list">
+            <a href="https://www.youtube.com/" class="link-list"><i class="fa-brands fa-youtube"></i></a>
         </li>
     </ul>
 </footer>
+<script>
+    document.getElementById("hola").addEventListener("click", function(){
+        document.getElementById("m").classList.add("andreu")
+    })
+    document.getElementById("b1").addEventListener("click", function(){
+        document.getElementById("m").classList.remove("andreu")
+    })
+    document.getElementById("b2").addEventListener("click", function(){
+        document.getElementById("m").classList.remove("andreu")
+    })
+    document.getElementById("b3").addEventListener("click", function(){
+        document.getElementById("m").classList.remove("andreu")
+    })
+    document.getElementById("b4").addEventListener("click", function(){
+        document.getElementById("m").classList.remove("andreu")
+    })
+</script>
 
 </html>
